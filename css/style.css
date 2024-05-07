@@ -176,7 +176,7 @@ html{
 .main-form{
   width: 100%;
   background-color: #000;
-  height: calc(100vh - 80px);
+  height: 100%;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -230,18 +230,31 @@ html{
   color: black;
   font-size: 35px;
   display: block;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px;
+  box-shadow: 5px 5px 5px #111;
+}
+
+.form form .text:focus{
+  border: 1px solid rgb(124, 124, 255);
 }
 
 .form .submit{
   width: 60%;
   height: 40px;
-  background-color: blue;
+  background-color: rgb(73, 73, 255);
   font-size: 20px;
-  border-radius: 20px;
-  border-color: darkblue;
+  border: #000 solid 2px;
+  border-radius: 10px;
   margin: 40px auto;
+}
+
+.form .submit:hover{
+  background-color: rgb(51, 51, 255);
+}
+
+.form textarea{
+  resize: none;
 }
 /* FIM CADASTRO*/
 
@@ -317,6 +330,10 @@ footer p {
 
   /* INICIO CONTATO*/
 
+  .main-form{
+    padding-left: 0;
+  }
+
   .text-form{
     width: 0%;
     height: 0%;
@@ -330,6 +347,7 @@ footer p {
     font-size: 0;
   }
   .form{
+    margin: 0 auto;
     width: 100%;
   }
   
